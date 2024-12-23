@@ -1,0 +1,102 @@
+@font-face{
+    font-family: GeneralSans;
+    src: url(GeneralSans_Complete/Fonts/OTF/GeneralSans-Regular.otf);
+}
+
+@font-face{
+    font-family: Interbold;
+    src: url(Inter-4.1/extras/otf/Inter-ExtraBold.otf);
+}
+
+@font-face{
+    font-family: inter;
+    src: url(Inter-4.1/extras/otf/Inter-Regular.otf);
+}
+
+
+body{
+    font-family: GeneralSans;
+    background-color: #2D2D2D;
+}
+
+/* NavBar------------------------------------ */
+
+li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+.logo{
+    font-family: Interbold;
+    color: #ffffff;
+}
+
+header{
+   display: flex; 
+   justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    font-family: interbold;
+}
+
+.emailbut{
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    font-family: interbold;
+    color: white;
+    background-color: #dcdcdc51;
+    border: 0.5px solid #ffffff;
+}
+
+/* Hero-Section---------------------------------- */
+
+.herotext{
+    font-family: interbold;
+    font-size: 135px;
+    color: white;
+    padding-left: 30px;
+}
+
+/* Works-Section--------------------------------- */
+
+.whitebox{
+    background-color: white;
+    width: auto;
+    height: 1000px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-start-start-radius: 50px;
+    border-start-end-radius: 50px;
+    display: flex;
+    padding:50px;
+    gap: 50px;
+}
+
+.herotitle{
+    font-family: interbold;
+    font-size: 80px;
+    color: black;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0%;
+    word-wrap: break-word;
+    width: 500px;
+    margin-top: 50px;
+    margin-right: 700px;
+}
+ 
