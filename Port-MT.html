@@ -1,166 +1,99 @@
-@font-face{
-    font-family: GeneralSans;
-    src: url(GeneralSans_Complete/Fonts/OTF/GeneralSans-Regular.otf);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;M/T&gt; Portfolio</title>
+    <link rel="stylesheet" href="Port-MT.css">
+</head>
+<body>
 
-@font-face{
-    font-family: Interbold;
-    src: url(Inter-4.1/extras/otf/Inter-ExtraBold.otf);
-}
+    <!-- NavBar------------------------------------------------------>
+    <header>
+        <h2 class="logo">&lt;M/T&gt;</h2>
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Works</a></li>
+                <li><a href="">About Me</a></li>
+                <li><button class="emailbut">Copy Email</button></li>
+            </ul>
+        </nav>
+    </header>
 
-@font-face{
-    font-family: inter;
-    src: url(Inter-4.1/extras/otf/Inter-Regular.otf);
-}
+    <!-- Hero-Section-------------------------------------------------->
+    <h1 class="herotext">
+        WEB DEVELOPER/<br>
+        DESIGNER
+    </h1>
 
+    <!-- Works-Section-------------------------------------------------->
 
-body{
-    font-family: GeneralSans;
-    background-color: #2D2D2D;
-}
-
-/* NavBar------------------------------------ */
-
-li a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-li{
-    list-style: none;
-    display: inline-block;
-}
-
-.logo{
-    font-family: Interbold;
-    color: #ffffff;
-}
-
-header{
-   display: flex; 
-   justify-content: space-between;
-    align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
-
-}
-
-ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-    font-family: interbold;
-}
-
-.emailbut{
-    height: 40px;
-    width: 120px;
-    border-radius: 20px;
-    font-family: interbold;
-    color: white;
-    background-color: #dcdcdc51;
-    border: 0.5px solid #ffffff;
-}
-
-/* Hero-Section---------------------------------- */
-
-.herotext{
-    font-family: interbold;
-    font-size: 135px;
-    color: white;
-    padding-left: 30px;
-}
-
-/* White -Section--------------------------------- */
-
-.whitebox{
-    background-color: rgb(237, 237, 237);
-    width: auto;
-    height: 1300px;
-    margin-left: 30px;
-    margin-right: 30px;
-    border-radius: 50px;
-    display: flex;
-    padding:50px;
-    gap: 50px;
-    transition: box-shadow 0.2s;
-    max-width: 1200px;
-}
-
-.whitebox:hover{
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
-}
+    <div class="whitebox">
+        <div>
+            <p class="herotitle">
+             I design brands and products.
+            </p>
+        
+            <p class="aboutP">
+             Hi! I'm Taiga. I work with people from all over the world to create tailor-made Webflow experiences and websites.
+            </p>  <br>
 
 
-.herotitle{
-    font-family: interbold;
-    font-size: 88px;
-    word-wrap: break-word;
-    width: 600px;
-    transition: text-shadow 0.3s;
-    cursor: pointer;
-}
+            <button class="aboutbutton">
 
-.herotitle:hover{
-    text-shadow: 5px 5px 10px rgb(193, 193, 193);
-}
- 
+                <div>
 
-.aboutP{
-    font-family: inter;
-    font-size: 35px;
-    color: #000000;
-    margin-left: 550px;
-    word-wrap: break-word;
-    width: 500px;
-    transition: text-shadow 0.3s;
-    cursor: pointer;
-}
+                <p>BIT ABOUT ME</p>
 
-.aboutP:hover{
-    text-shadow: 5px 5px 10px rgb(193, 193, 193);
-}
+                </div>
 
-.imagehero{
-    width: 900px;
-    height: auto;
-    border-radius: 40px;
-    margin-left: 120px;
-    margin-top: 100px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
-}
+            <div class="arrowdiv"><span class="arrowone"> &rarr;</span></div>
+            </button>
 
-/* Footer---------------------------------------- */
-
-hr{
-    border: 0.5px solid #ffffff;
-    margin-top: 100px;
-    margin-bottom: 0%;
-}
-
-.footerabout{
-    height: 500px;
-    color: white;
-    font-size: 70px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
+            <div>
+                <img class="imagehero" src="hero-anymove.jpg" alt="">
+            </div>
 
 
-.topicab{
-    margin-top: 0;
-}
+            <h2 class="infoimg">
+                Most recently I worked at digital car rental AnyMove, believing in a world with less cars. Overseeing all aspects of the AnyMove brand from 0 to 1. Collaborated on the consumer app. Worked closely with marketing and product teams on various projects.
+            </h2>
 
-.topicP{
-    font-size: 30px;
-    word-wrap: break-word;
-    width: 600px;
-}
 
-.rowthis{
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    margin-top: 50px;
-}
+
+        </div>
+
+        
+
+    </div>
+
+    <!-- Footer-Section-------------------------------------------------->
+    
+    <div class="footerabout">
+        <hr>
+        <div class="rowthis">
+        <div>
+        <h2 class="topicab">About</h2>
+        </div>
+        <div>
+        <p class="topicP">
+            As a creative developer, I focus on both design and development — allowing me to work on projects from concept until the very moment we hit publish. Unique layouts, nteractions and great typography is what I focus on when working on websites.
+        </p>
+        </div>
+        </div>
+    </div>
+
+    <div class="rowone">
+        <hr>
+        <div>
+            <h2 class="topicwhat">
+                Heres What I Do
+            </h2>
+        </div>
+        <div>
+
+        </div>
+    </div>
+
+</body>
+</html>
