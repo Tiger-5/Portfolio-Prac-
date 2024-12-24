@@ -1,77 +1,208 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>&lt;M/T&gt; Portfolio</title>
-    <link rel="stylesheet" href="Port-MT.css">
-</head>
-<body>
+@font-face{
+    font-family: GeneralSans;
+    src: url(GeneralSans_Complete/Fonts/OTF/GeneralSans-Regular.otf);
+}
 
-    <!-- NavBar------------------------------------------------------>
-    <header>
-        <h2 class="logo">&lt;M/T&gt;</h2>
-        <nav class="navbar">
-            <ul>
-                <li><a href="">Works</a></li>
-                <li><a href="">About Me</a></li>
-                <li><button class="emailbut">Copy Email</button></li>
-            </ul>
-        </nav>
-    </header>
+@font-face{
+    font-family: Interbold;
+    src: url(Inter-4.1/extras/otf/Inter-ExtraBold.otf);
+}
 
-    <!-- Hero-Section-------------------------------------------------->
-    <h1 class="herotext">
-        WEB DEVELOPER/<br>
-        DESIGNER
-    </h1>
+@font-face{
+    font-family: inter;
+    src: url(Inter-4.1/extras/otf/Inter-Regular.otf);
+}
 
-    <!-- Works-Section-------------------------------------------------->
 
-    <div class="whitebox">
-        <div>
-            <p class="herotitle">
-             I design brands and products.
-            </p>
-        
-            <p class="aboutP">
-             Hi! I'm Taiga. I work with people from all over the world to create tailor-made Webflow experiences and websites.
-            </p>  
+body{
+    font-family: GeneralSans;
+    background-color: #2D2D2D;
+}
 
-            <div>
-                <img class="imagehero" src="hero-anymove.jpg" alt="">
-            </div>
+/* NavBar------------------------------------ */
 
-        </div>
+li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
 
-        
+li{
+    list-style: none;
+    display: inline-block;
+}
 
-    </div>
+.logo{
+    font-family: Interbold;
+    color: #ffffff;
+}
 
-    <!-- Footer-Section-------------------------------------------------->
-    
-    <div class="footerabout">
-        <hr>
-        <div class="rowthis">
-        <div>
-        <h2 class="topicab">About</h2>
-        </div>
-        <div>
-        <p class="topicP">
-            As a creative developer, I focus on both design and development — allowing me to work on projects from concept until the very moment we hit publish. Unique layouts, nteractions and great typography is what I focus on when working on websites.
-        </p>
-        </div>
-        </div>
-    </div>
+header{
+   display: flex; 
+   justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
 
-    <div>
-        <hr>
-        <div>
-            <h2>
-                Heres What I Do
-            </h2>
-        </div>
-    </div>
+}
 
-</body>
-</html>
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    font-family: interbold;
+}
+
+.emailbut{
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    font-family: interbold;
+    color: white;
+    background-color: #dcdcdc51;
+    border: 0.5px solid #ffffff;
+}
+
+/* Hero-Section---------------------------------- */
+
+.herotext{
+    font-family: interbold;
+    font-size: 135px;
+    color: white;
+    padding-left: 30px;
+}
+
+/* White -Section--------------------------------- */
+
+.whitebox{
+    background-color: rgb(237, 237, 237);
+    width: auto;
+    height: 1580px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 50px;
+    display: flex;
+    padding:50px;
+    gap: 50px;
+    transition: box-shadow 0.2s;
+    max-width: 1200px;
+}
+
+.infoimg{
+    word-wrap: break-word;
+    width: 550px;
+    margin-left: 120px;
+    margin-top: 60px;
+}
+
+.whitebox:hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
+}
+
+
+.herotitle{
+    font-family: interbold;
+    font-size: 88px;
+    word-wrap: break-word;
+    width: 600px;
+    transition: text-shadow 0.3s;
+    cursor: pointer;
+}
+
+.herotitle:hover{
+    text-shadow: 5px 5px 10px rgb(193, 193, 193);
+}
+ 
+
+.aboutP{
+    font-family: inter;
+    font-size: 35px;
+    color: #000000;
+    margin-left: 550px;
+    word-wrap: break-word;
+    width: 500px;
+    transition: text-shadow 0.3s;
+    margin-bottom: 0%;
+    cursor: pointer;
+}
+
+.aboutbutton{
+    margin-left: 550px;
+    height: 40px;
+    width: 160px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.aboutbutton:hover{
+    background-color: #000000;
+    color: white;
+}
+
+.arrowone{
+    font-size: 25px;
+}
+
+.arrowdiv{
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+
+.aboutP:hover{
+    text-shadow: 5px 5px 10px rgb(193, 193, 193);
+}
+
+.imagehero{
+    width: 900px;
+    height: auto;
+    border-radius: 40px;
+    margin-left: 120px;
+    margin-top: 100px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
+}
+
+/* Footer---------------------------------------- */
+
+hr{
+    border: 0.5px solid #ffffff;
+    margin-top: 100px;
+    margin-bottom: 0%;
+}
+
+.footerabout{
+    height: 500px;
+    color: white;
+    font-size: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.topicab{
+    margin-top: 0;
+}
+
+.topicP{
+    font-size: 30px;
+    word-wrap: break-word;
+    width: 600px;
+}
+
+.rowthis{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.topicwhat{
+    font-size: 70px;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
